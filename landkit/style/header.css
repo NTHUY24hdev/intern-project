@@ -38,13 +38,23 @@
 
 .markaz:hover{
     color: rgb(0, 89, 255);
+
 }
 
 .sectionI h1 span{
     color: rgb(0, 89, 255);
     font-weight: 100;
 }
+.menu {
+    display: none;
+}
+.menu:hover{
+    display: flex;
+}
 
+
+
+/* Welcome */
 .sectionI h1{
     font-weight: 100;
     position: relative;

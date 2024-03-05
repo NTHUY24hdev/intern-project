@@ -1,0 +1,147 @@
+.wrapper-download{
+    background-color: #f1f1f1;
+    padding-top: 100px;
+}
+
+.download{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.download .container {
+    padding: 0 150px;
+}
+
+.download .form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.download .form:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+    box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15);
+}
+
+.download .form .form-image img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    top: 0px;
+}
+
+.download .form form{
+    padding: 20px;
+}
+
+.download .form form .submit {
+    margin-top: 15px;
+}
+
+.download .form form .submit button{
+    border: none;
+    color: white;
+    background-color: #42ba96;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.download .form .form-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.download .form .form-input p{
+    font-size: 12px;
+    color: red;
+    height: 10px;
+}
+
+.download .form .form-input .input-item{
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0px;
+    margin: 10px 0px 0px;
+    font-size: 16px;
+    color: #8b9ebb;
+}
+
+
+
+.download .form .submit button:hover{
+    background-color: #389e7f;
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.download .content{
+    padding-left: 40px;
+    width: 50%;
+}
+
+
+
+.download .content .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.download .content .list .list-item {
+    width: 50%;
+    color: #42ba96;
+    margin: 10px 0px;
+}
+
+.download .content .list .list-item i{
+    color: #42ba96;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 13px;
+    padding: 5px;
+    background-color: #e3f4f2;
+}
+
+/* style for curved image in form  */
+.download .position-relative {
+    position: relative!important;
+}
+.download .shape:not([class*=shape-blur]) {
+    overflow: hidden;
+}
+.download .shape-bottom {
+    right: 0;
+    bottom: 4px;
+    left: 0;
+}
+.download .shape {
+    position: absolute;
+    pointer-events: none;
+}
+
+.download .text-white {
+    color: #fff!important;
+}
+.download .shape:not([class*=shape-blur])>* {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.download .shape-fluid-x>* {
+    width: 100%;
+    height: auto;
+}
+.download .shape-bottom>* {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+
+.download .shape>* {
+    display: block;
+}

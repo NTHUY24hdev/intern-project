@@ -1,0 +1,29 @@
+
+.container .introduce{
+    padding: 150px;
+}
+.introduce {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .introduce .intro-item {
+    width: 30%;
+  }
+  
+  .introduce .intro-item .icon img {
+    width: 45px;
+    top: 0;
+  }
+  
+  .introduce .intro-item .title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .introduce .intro-item .content {
+    line-height: 1.5;
+    color: #8b9ebb;
+    margin-top: 15px;
+  }
