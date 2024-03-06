@@ -3,10 +3,12 @@
 <head>
     <title>Landkit</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/introduce.css">
     <link rel="stylesheet" href="style/social.css">
     <link rel="stylesheet" href="style/download.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -140,52 +142,94 @@
     </div>
     <hr style="margin: 0;">
 
-    <div class="wrapper-download">
-      <div class="download container">
-        <div class="form">
-          <div class="form-image">
-            <img src="images/photo-2.jpg" alt="">
-           
+    
+      <div class="wrapper-download">
+        <div class="container">
+        <div class="download row">
+          <div class="form ">
+            <div class="form-image">
+              <img src="images/photo-2.jpg" alt="">
+            
+            </div>
+            <form action="" name="myform" id="myform" >
+              <div class="form-input">
+                <input name="name" type="text" id="name" class="input-item" placeholder="Name"> 
+                <p id="text-name"></p>
+                <input name="email" type="text" id="email" class="input-item" placeholder="Email"> 
+                <p id="text-email"></p>
+                <input name="password" type="password" id="pass" class="input-item" placeholder="Password"> 
+                <p id="text-pass"></p>
+              </div>
+              <div class="submit">
+                <button type="submit" id="submit">Download a sample</button>
+              </div>
+            </form>
+            
           </div>
-          <form action="" name="myform" id="myform" >
-            <div class="form-input">
-              <input name="name" type="text" id="name" class="input-item" placeholder="Name"> 
-              <p id="text-name"></p>
-              <input name="email" type="text" id="email" class="input-item" placeholder="Email"> 
-              <p id="text-email"></p>
-              <input name="password" type="password" id="pass" class="input-item" placeholder="Password"> 
-              <p id="text-pass"></p>
+          <div class="content">
+            <div class="title title-medium" style="font-size: 30px;">
+              The most useful resource <br>
+              <span style="color: #42ba96;">created for founders.<span id="import-text"></span><span id="cursor">|</span> </span> 
             </div>
-            <div class="submit">
-              <button type="submit" id="submit">Download a sample</button>
+            <div class="text content-medium">
+              Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
             </div>
-          </form>
-          
-        </div>
-        <div class="content">
-          <div class="title title-medium">
-            The most useful resource <br>
-            <span style="color: #42ba96;">created for <span id="import-text"></span><span id="cursor">|</span> </span> 
-          </div>
-          <div class="text content-medium">
-            Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
-          </div>
-          <div class="list">
-            <div class="list-item">
-              <i class="fas fa-check"></i>Lifetime updates
+            <div class="list">
+              <div class="list-item">
+                <i class="fas fa-check"></i>Lifetime updates
+              </div>
+              <div class="list-item">
+                <i class="fas fa-check"></i>Tons of assets
+              </div>
+              <div class="list-item">
+                <i class="fas fa-check"></i>Tech support
+              </div>
+              <div class="list-item">
+                <i class="fas fa-check"></i>Integration ready
+              </div> 
             </div>
-            <div class="list-item">
-              <i class="fas fa-check"></i>Tons of assets
-            </div>
-            <div class="list-item">
-              <i class="fas fa-check"></i>Tech support
-            </div>
-            <div class="list-item">
-              <i class="fas fa-check"></i>Integration ready
-            </div> 
           </div>
         </div>
       </div>
+    </div> 
+    
+    
+
+  <div class="wrapper-bootstrap">
+    <div class="container">
+      <div class="bootstrap row">
+        <div class="content col-md-6">
+          <div class="title title-medium">
+            We have lots of experience <br>
+            <span style="color: #335eea;">building Bootstrap themes</span>.
+          </div>
+          <div class="text content-medium">
+            We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
+          </div>
+          <div class="item item-1">
+            <div class="icon">
+              <img src="images/circle.svg" alt="">
+            </div>
+            <div class="item-content">
+              <p class="title-small">Bootstrap users since the beginning</p>
+              <p class="content-small">We've been developing with Bootstrap since it was publicly released in 2011.</p>
+            </div>
+          </div>
+          <div class="item item-2">
+            <div class="icon">
+              <img src="images/closetag.svg" alt="">
+            </div>
+            <div class="item-content">
+              <p class="title-small">Deep understanding of Bootstrap</p>
+              <p class="content-small">We've watched Bootstrap grow up over the years and understand it better than almost anyone.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image col-md-6">
+          <img src="images/dashkit.jpg" alt="">
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>

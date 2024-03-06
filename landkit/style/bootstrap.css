@@ -1,0 +1,50 @@
+.wrapper-bootstrap{
+    background-color: #f1f1f1;
+    padding-top: 100px;
+}
+
+.bootstrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.bootstrap .content{
+    width: 50%;
+    line-height: 1.5;
+}
+
+.bootstrap .content .item{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.bootstrap .content .item .icon{
+    margin-right: 25px;
+}
+
+.bootstrap .content .item .icon img{
+    width: 50px;
+    top: 0;
+}
+
+.bootstrap .image{
+    perspective: 1000px;
+    width: 50%;
+    background-image: url("images/bg_bootstrap.svg");
+    background-size: 125%;
+
+   
+}
+
+.bootstrap .image img{
+    transform: rotateY(-35deg) rotateX(15deg);
+    width: 135%;
+    box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15);
+    border-radius: 10px;
+    top: 0;
+}
