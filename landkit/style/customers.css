@@ -7,6 +7,16 @@
     text-align: center;
 }
 
+.title-medium{
+    font-size: 1.9rem;
+}
+.content-medium{
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    line-height: 1.5;
+    color: #869ab8;
+}
+
 .customer .title .text1{
     font-size: 1.9em;
     font-weight: 400;

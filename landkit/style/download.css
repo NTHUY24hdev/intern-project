@@ -87,10 +87,19 @@
     padding-left: 40px;
     width: 50%;
 }
-.download .content .title title-medium{
+.download .content .title{
     font-size: 20px;
 }
 
+.title-medium{
+    font-size: 1.9rem;
+}
+.content-medium{
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    line-height: 1.5;
+    color: #869ab8;
+}
 
 .download .content .list{
     display: flex;

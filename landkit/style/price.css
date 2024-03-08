@@ -1,0 +1,115 @@
+.wrapper-price{
+    background-color: #f1f4f8;
+    padding-top: 100px;
+}
+
+.price{
+    text-align: center;
+    position: relative;
+    height: 550px;
+}
+
+.price .title{
+    font-size: 34px;
+}
+
+.price .text{
+    line-height: 1.5;
+    font-size: 20px;
+   margin: 30px auto ;
+    color: #506690;
+    max-width: 560px;
+}
+.price .toggle{
+    color: #8b9ebb;
+}
+
+.price .toggle label{
+    margin: 0px 10px ;
+}
+
+.price .card{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: absolute;
+    top: 200px;
+    max-width: 940px;
+}
+
+.price .card .card-item{
+    padding-top: 50px;
+}
+
+.price .card .card-item .label{
+    border-radius: 14px;
+    background-color: #eceafc;
+    color: #335eaa;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.price .card .card-item .number{
+    margin-top: 25px;
+}
+
+
+.price .card .card-left{
+    z-index: 2;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15);
+}
+
+
+.price .card .card-left .list{
+    text-align: left;
+    margin: 50px 80px;
+}
+
+.price .card .card-left .list .list-item {
+    margin: 20px 0px;
+}
+
+.price .card .card-left  .list .list-item i{
+    color: #42ba96;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 13px;
+    padding: 5px;
+    background-color: #e3f4f2;
+}
+
+.price .card .card-left .button{
+    background-color: #335eea;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 22px;
+    color: white;
+}
+
+.price .card .card-right{
+    z-index: 1;
+    width: 50%;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.price .card .card-right .button{
+    background-color: #d9e2ef;
+    border-bottom-right-radius: 10px;
+    padding: 22px;
+    color: #1b2a4e;
+}
+
+.price .card .card-right .text-content{
+    margin: 112px 45px;
+    color: #869ab8;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+}
