@@ -7,8 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 80px 0px;
-    justify-content: space-evenly;
-    padding: 0 150px;
+    justify-content: space-evenly;  
+    padding: 0 150px; 
 }
 
 .footer .network{

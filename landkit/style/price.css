@@ -29,16 +29,18 @@
 }
 
 .price .card{
-    display: none;
+    display: flex;
     align-items: center;
     margin-top: 50px;
     position: absolute;
     top: 200px;
     max-width: 940px;
+    height: 504px;
+    margin-left: 160px;
 }
 
 .price .card .card-item{
-    padding-top: 50px;
+    padding: 50px 0 0 ;
 }
 
 .price .card .card-item .label{
@@ -97,6 +99,7 @@
     background-color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    /*margin-left: -0.75rem !important;*/
 }
 
 .price .card .card-right .button{
