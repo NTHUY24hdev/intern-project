@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     padding: 80px 0px;
     justify-content: space-evenly;  
-    padding: 0 150px; 
+    /*padding: 0 150px;*/ 
 }
 
 .footer .network{
@@ -60,4 +60,33 @@
 
 .footer .footer-list .item a:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px){
+    .footer .infor .footer-list {
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+} 
+
+@media only screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer .infor{
+        width: 100%;
+    }
+
+    .footer .network{
+        padding: 0px;
+    }
+    .footer .network .logo{
+        width: 250px;
+    }
+
+    .footer .network .image{
+        width: 250px;
+    }
 }

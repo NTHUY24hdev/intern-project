@@ -1,7 +1,7 @@
 .wrapper-social {
    /* border-top: 1px solid #c2cff9;
     border-bottom: 1px solid #c2cff9;*/
-    padding: 40px 105px;
+    padding: 40px 0;
     /*margin-top: 100px;*/
   }
   
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 130px;
+    /*padding: 0 130px;*/
   }
   
   .social .social-item {
@@ -20,4 +20,17 @@
   .social .social-item img {
     width: 100%;
     top: 0;
+  }
+
+  @media only screen and (max-width: 768px){
+    .social .social-item {
+      width: 33.33%;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 572px){
+    .social .social-item {
+      width: 50%;
+    }
   }

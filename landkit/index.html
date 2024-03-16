@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/welcome.css">
     <link rel="stylesheet" href="style/introduce.css">
     <link rel="stylesheet" href="style/social.css">
     <link rel="stylesheet" href="style/download.css">
@@ -14,14 +15,224 @@
     <link rel="stylesheet" href="style/price.css">
     <link rel="stylesheet" href="style/getstarted.css">
     <link rel="stylesheet" href="style/footer.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/menu-toggle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.0/css/all.css"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&amp;_cacheOverride=1710618161715" rel="stylesheet">
     <script src="js/custom.js"></script>
     
   </head>
-<body>
+<body id="h" class="h">
+
+  <div id="menu-toggle" class="menu-toggle" >
+    <button class="close-btn" id="close-btn" > 
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="landings wrap-menu">
+      <p>Landings</p>
+      <div class="menu">
+        <div class="menu-left">
+          <ul class="item">
+            <li>SERVICES</li>
+            <li><a href="">Coworking</a></li>
+            <li><a href="">Rental</a></li>
+            <li><a href="">Job Listing</a></li>
+          </ul>
+          <ul class="item">
+            <li>APPS</li>
+            <li><a href="">Desktop</a></li>
+            <li><a href="">Mobile</a></li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <ul class="item">
+            <li>WEB</li>
+            <li><a href="">Basic</a></li>
+            <li><a href="">Start up (NEW)</a></li>
+            <li><a href="">Enterprise</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Cloud Hosting</a></li>
+            <li><a href="">Agency</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div class="pages wrap-menu">
+      <p>Pages</p>
+      <div class="menu">
+        <div class="menu-left">
+          <ul class="item">
+            <li>CAREER</li>
+            <li><a href="">Listing</a></li>
+            <li><a href="">Rental</a></li>
+            <li><a href="">Opening</a></li>
+            <li>COMPANY</li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Term</a></li>
+          </ul>
+          <ul class="item">
+            <li>HELP CENTER</li>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Article</a></li>
+            <li>CONTACT</li>
+            <li><a href="">Basic</a></li>
+            <li><a href="">Cover</a></li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <ul class="item">
+            <li>BLOG</li>
+            <li><a href="">Rich View</a></li>
+            <li><a href="">Article</a></li>
+            <li><a href="">Showcaes</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+          <ul class="item">
+            <li>PORTFOLIO (NEW)</li>
+            <li><a href="">Masonry</a></li>
+            <li><a href="">Grid Rows</a></li>
+            <li><a href="">Parallax</a></li>
+            <li><a href="">Case Study</a></li>
+            <li><a href="">Sidebar</a></li>
+            <li><a href="">Sidebar: Fluid</a></li>
+            <li><a href="">Basic grid</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="account wrap-menu" >
+      <p>Account</p>
+      <div class="menu">
+        <ul class="menu-item">
+          <li class="chose">
+            <div class="drop">
+              <a>Setting(NEW)</a>
+              <i class="fas fa-chevron-down" style="transform: rotate(0deg);"></i>
+            </div>
+            <div class="sub-menu" >
+              <ul>
+                <li><a href=""> General </a></li>
+                <li><a href=""> Security </a></li>
+                <li><a href=""> Notifications </a></li>
+                <li><a href="">Plans & Payment </a></li>
+                <li><a href="">Users </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="chose"> 
+            <div class="drop">
+              <a>Sign In</a>
+              <i class="fas fa-chevron-down"  style="transform: rotate(0deg);"></i>
+            </div>
+            <div class="sub-menu">
+              <ul>
+                <li><a href=""> Side Cover </a></li>
+                <li><a href=""> Illustration </a></li>
+                <li><a href=""> Basic </a></li>
+                <li><a href="">Modal Horizontal </a></li>
+                <li><a href="">Modal Vertical </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="chose">
+            <div class="drop">
+              <a>Sign Up</a>
+              <i class="fas fa-chevron-down"  style="transform: rotate(0deg);"></i>
+            </div>
+            <div class="sub-menu">
+              <ul>
+                <li><a href=""> Side Cover </a></li>
+                <li><a href=""> Illustration </a></li>
+                <li><a href=""> Basic </a></li>
+                <li><a href="">Modal Horizontal </a></li>
+                <li><a href="">Modal Vertical </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="chose">
+            <div class="drop">
+              <a>Password Reset</a>
+              <i class="fas fa-chevron-down"  style="transform: rotate(0deg);"></i>
+            </div>
+            <div class="sub-menu">
+              <ul>
+                <li><a href=""> Side Cover </a></li>
+                <li><a href=""> Illustration </a></li>
+                <li><a href=""> Basic </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="chose">
+            <div class="drop">
+              <a>Error</a>
+              <i class="fas fa-chevron-down"  style="transform: rotate(0deg);"></i>
+            </div>
+            <div class="sub-menu">
+              <ul>
+                <li><a href=""> Side Cover </a></li>
+                <li><a href=""> Illustration </a></li>
+                <li><a href=""> Basic </a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="documentation wrap-menu">
+      <p>Documentation</p>
+      <div class="menu">
+        <ul>
+          <li>
+            <div class="doc-item">
+              <div class="doc-icon">
+                <img src="images/doc1.svg" alt="">
+              </div>
+              <div class="doc-content">
+                <h4>DOCUMENTATION</h4>
+                <p>Customizing and building</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="doc-item">
+              <div class="doc-icon">
+                <img src="images/doc2.svg" alt="">
+              </div>
+              <div class="doc-content">
+                <h4>COMPONENTS</h4>
+                <p>Full list of components</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="doc-item" >
+              <div class="doc-icon">
+                <img src="images/doc3.svg" alt="">
+              </div>
+              <div class="doc-content">
+                <h4>CHANGELOG</h4>
+                <p>Keep track of changes</p>
+              </div>
+              <div class="version">
+                1.2.0
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="button">
+      <a href="">
+        Buy now
+      </a>
+    </div>
+  </div>
+
     <div class="wrapper-header">
       <div class="container">
         <div class="header row">
@@ -34,7 +245,12 @@
                 <p>Landings</p>
                 <div class="menu-content">
                   <div class="wrap">
-                    <div class="picture">
+                    <div class="picture" style="background-image: linear-gradient(
+                      rgba(34, 114, 227, 0.8),
+                      rgba(34, 114, 227, 0.8)
+                        ),
+                      url('images/photo-3.jpg');">
+                      
                       <div class="pic-content">
                         <h3>Want to see an overview?</h3>
                         <p>See all the pages at once.</p>
@@ -240,70 +456,75 @@
           <div class="btn-header col-4">
             <a href="">Buy Now</a>
           </div>
-          <button class="menu-bar" id="toggle-btn">
+          <button class="menu-bar" id="toggle-btn" >
             <i class="fas fa-bars"></i>
           </button>
         </div>  
       </div>
     </div>
 
-    <div class="container">  
-        <div class="row">
-            <div class="col-6 sectionI">
-                <h1>Welcome to <span>Landkit.</span> <br>
-                    Develop anything.</h1>
-                <p>Build a beautiful, modern website with flexible <br> 
-                    Bootstrap components built from scratch.</p>
-                <div class="row">
-                    <div class="col-1">
-                        <button class="rounded-3 buttonBir">View all pages &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></button>
-                    </div>
-                    <div class="col-1">
-                        <button class="rounded-3 alohida">Documentation</button>
-                    </div>
-                </div>
+    <div class="wrapper-welcome">
+      <div class="container">
+        <div class="welcome row">
+          <div class="content col-6" >
+            <div class="title title-large">
+              <p>Welcome to <span style="color: #335eea;">Landkit</span>.</p>
+              <p>Develop anything.</p>
             </div>
-            <div class="col-6">
-                <img src="images/illustration-2.png" alt="">
+            <div class="text content-large">
+              Build a beautiful, modern website with flexible Bootstrap components
+              built from scratch.
             </div>
+            <div class="button">
+              <a href="" class="dark"
+                >View all pages <i class="far fa-arrow-right"></i>
+              </a>
+              <a href="" class="light">Documentation</a>
+            </div>
+          </div>
+          <div class="image col-6" >
+            <img src="images/illustration-2.png" alt="" />
+          </div>
         </div>
-    </div>
+      </div>  
+    </div>  
 
-    <div class="container">
-      <div class="  introduce">
-        <div class="col-12 col-md-4 intro-item">
-          <div class="icon">
-            <img src="images/toggle.svg" alt="" />
+    <div class="wrapper-introduce">
+      <div class="container">
+        <div class="  introduce">
+          <div class="col-12 col-md-4 intro-item">
+            <div class="icon">
+              <img src="images/toggle.svg" alt="" />
+            </div>
+            <div class="title title-small">Built for developers</div>
+            <div class="content content-small">
+              Landkit is built to make your life easier. Variables, build tooling,
+              documentation, and reusable components.
+            </div>
           </div>
-          <div class="title title-small">Built for developers</div>
-          <div class="content content-small">
-            Landkit is built to make your life easier. Variables, build tooling,
-            documentation, and reusable components.
+          <div class="col-12 col-md-4 intro-item">
+            <div class="icon">
+              <img src="images/component.svg" alt="" />
+            </div>
+            <div class="title title-small">Designed to be modern</div>
+            <div class="content content-small">
+              Designed with the latest design trends in mind. Landkit feels modern,
+              minimal, and beautiful.
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4 intro-item">
-          <div class="icon">
-            <img src="images/component.svg" alt="" />
-          </div>
-          <div class="title title-small">Designed to be modern</div>
-          <div class="content content-small">
-            Designed with the latest design trends in mind. Landkit feels modern,
-            minimal, and beautiful.
-          </div>
-        </div>
-        <div class="col-12 col-md-4 intro-item">
-          <div class="icon">
-            <img src="images/closetag.svg" alt="" />
-          </div>
-          <div class="title title-small">Documentation for everything</div>
-          <div class="content content-small">
-            We've written extensive documentation for components and tools, so you
-            never have to reverse engineer anything.
+          <div class="col-12 col-md-4 intro-item">
+            <div class="icon">
+              <img src="images/closetag.svg" alt="" />
+            </div>
+            <div class="title title-small">Documentation for everything</div>
+            <div class="content content-small">
+              We've written extensive documentation for components and tools, so you
+              never have to reverse engineer anything.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr style="margin: 0;">
+    </div>  
     
     <div class="wrapper-social">
       <div class="container">
@@ -329,23 +550,21 @@
         </div>
       </div>
     </div>
-    <hr style="margin: 0;">
-  
+     
     <div class="wrapper-download">
       <div class="container">
         <div class="download row">
           <div class="form ">
             <div class="form-image">
               <img src="images/photo-2.jpg" alt="">
-            
             </div>
-            <form action="" name="myform" class="myform" >
+            <form action="" name="myform" id="myform" >
               <div class="form-input">
                 <input name="name" type="text" id="name" class="input-item" placeholder="Name"> 
                 <p id="text-name"></p>
                 <input name="email" type="text" id="email" class="input-item" placeholder="Email"> 
                 <p id="text-email"></p>
-                <input name="password" type="password" id="pass" class="input-item" placeholder="Password"> 
+                <input name="password" type="password" id="password" class="input-item" placeholder="Password"> 
                 <p id="text-pass"></p>
               </div>
               <div class="submit">
@@ -413,7 +632,7 @@
               </div>
             </div>
           </div>
-          <div class="image col-md-6">
+          <div class="image col-md-6" style="background-image: url('images/bg_bootstrap.svg'); background-size: 125%;">
             <img src="images/dashkit.jpg" alt="">
           </div>
         </div>
@@ -457,7 +676,7 @@
               <div class="slide slide-item">
                 <div class="child">
                   <div class="image">
-                    <img src="image/photo-26.jpg" alt="">
+                    <img src="images/photo-26.jpg" alt="">
                   </div>
                   <div class="content">
                     <div class="branch">

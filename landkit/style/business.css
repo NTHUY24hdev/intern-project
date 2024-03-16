@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 150PX;
+    /*padding: 0px 150PX;*/
 }
 
 .business .content{
@@ -60,4 +60,32 @@
 .business .image img{
     width: 100%;
     top: 0;
+}
+
+@media only screen and (max-width: 992px){
+    .business .image{
+        width: 40%;
+    }
+    .business .content{
+        width: 60%;
+    }
+    .business .content .data .data-item .number{
+        font-size: 18px;
+    }
+       
+}
+
+@media only screen and (max-width: 768px){
+    .business{
+        flex-direction: column-reverse;
+    }
+
+    .business .content{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .business .image{
+        width: 100%;
+    }
 }

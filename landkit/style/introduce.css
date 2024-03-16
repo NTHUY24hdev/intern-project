@@ -1,11 +1,15 @@
 
 .container .introduce{
-    padding: 150px;
+    /*padding: 150px;*/
+    padding-bottom: 70px;
 }
 .introduce {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    animation-name: slideInUp;
+    animation-duration: 2s;
+    
   }
   
   .introduce .intro-item {
@@ -26,4 +30,16 @@
     line-height: 1.5;
     color: #8b9ebb;
     margin-top: 15px;
+  }
+
+  @media only screen and (max-width: 768px){
+    .introduce{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+  
+   .introduce .intro-item{
+     width: 100%;
+     padding-top: 30px;
+   }
   }

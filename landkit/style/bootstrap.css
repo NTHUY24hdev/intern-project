@@ -7,12 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 140px;
+    /*padding: 0 140px;*/
 }
 
 .bootstrap .content{
     width: 50%;
     line-height: 1.5;
+    animation-name: slideInRight;
+    animation-duration: 2s;
 }
 
 .title-medium{
@@ -43,11 +45,12 @@
 }
 
 .bootstrap .image{
-    perspective: 1000px;
+    perspective: 3000px;
     width: 50%;
     background-image: url("images/bg_bootstrap.svg");
-    background-size: 125%;
-
+    background-size: 128%;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
    
 }
 
@@ -57,4 +60,39 @@
     box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15);
     border-radius: 10px;
     top: 0;
+}
+
+@media only screen and (max-width: 992px){
+    .bootstrap .content{
+        width: 60%;
+    }
+
+    .bootstrap .image{
+        width: 35%;
+        background-size: 157%;
+    }
+
+    .bootstrap .image img{
+        width: 155%;
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .bootstrap{
+        flex-direction: column;
+    }
+
+    .bootstrap .content{
+        width: 100%;
+    }
+
+    .bootstrap .image{
+        width: 100%;
+        background-size: 100%;
+    }
+
+    .bootstrap .image img{
+        width: 100%;
+    }
 }

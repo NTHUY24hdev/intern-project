@@ -37,6 +37,9 @@
     max-width: 940px;
     height: 504px;
     margin-left: 160px;
+    z-index: 2;
+    border: 0;
+    background: none;
 }
 
 .price .card .card-item{
@@ -64,6 +67,8 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15);
+    animation-name: slideInUp;
+    animation-duration: 2s;
 }
 
 
@@ -99,7 +104,10 @@
     background-color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    /*margin-left: -0.75rem !important;*/
+    margin-left: -0.75rem !important;
+    animation-name: slideInUp;
+    animation-duration: 4s;
+    margin-top: 50px;
 }
 
 .price .card .card-right .button{
@@ -175,4 +183,59 @@ border-radius: 34px;
 
 .slider.round:before {
 border-radius: 50%;
+}
+@media only screen and (max-width: 1024px){
+    .price .card{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .price .title{
+        font-size: 30px;
+    }
+    
+    .price .text{
+        font-size: 18px;
+        color: #506690;
+    }
+    .price .card .card-right .text-content{
+        margin: 100px 45px;
+        font-size: 20px;
+    }
+
+    .price .card .card-left .list{
+        text-align: left;
+        margin: 50px 40px;
+    }
+    .price .card {
+        margin-left: -3px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .price{
+        height: 895px;
+    }
+    .price .card{
+        flex-direction: column;
+        display: block;
+    }
+
+    .price .card .card-item{
+        width: 100%;
+    }
+
+    .price .card .card-right{
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+    .price .card .card-right .button{
+        border-bottom-left-radius: 10px;
+    }
+    .price .card .card-right .text-content{
+        margin: 40px 45px;
+        font-size: 20px;
+    }
+
 }

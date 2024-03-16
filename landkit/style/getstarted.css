@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     line-height: 1.5;
-    padding: 0 150px;
+   /* padding: 0 150px;*/
 }
 
 .question .question-item{
@@ -46,6 +46,15 @@ color: #869ab8;
 margin-top: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+    .question .question-item{
+        width: 100%;
+    }
+    .question {
+        padding-top: 60px;
+    }
+
+}
 /* ------------------------css for get-buy div--------------------------------------- */
 .get-buy{
     text-align: center;
