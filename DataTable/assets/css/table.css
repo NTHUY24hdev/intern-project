@@ -1,0 +1,155 @@
+.table {
+    margin: auto;
+    min-width: 300px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.table__header tr {
+    border-top: none;
+    background: #428bca;
+    color: #fff;
+}
+
+.table__body tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f9fc;
+}
+
+.table__body tr:nth-child(odd) {
+    background-color: #e3f3ff;
+}
+
+.table th {
+    display: none;
+}
+
+.table td {
+    display: block;
+}
+
+.table td:first-child {
+    margin-top: 0.5em;
+}
+
+.table td:last-child {
+    margin-bottom: 0.5em;
+}
+
+.table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    color: #000;
+}
+
+.table th,
+.table td {
+    text-align: left;
+}
+
+.table {
+    color: #333;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+.table tr {
+    border-color: #bfbfbf;
+}
+
+.table th,
+.table td {
+    padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 601px) {
+    .table tr:nth-child(2) {
+        border-top: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .table tr:hover:not(:first-child) {
+        background-color: #d8e7f3;
+    }
+    .table td:before {
+        display: none;
+    }
+    .table th,
+    .table td {
+        display: table-cell;
+        padding: 0.25em 0.5em;
+    }
+    .table th:first-child,
+    .table td:first-child {
+        padding-left: 0;
+    }
+    .table th:last-child,
+    .table td:last-child {
+        padding-right: 0;
+    }
+    .table th,
+    .table td {
+        padding: 0.7em 1em !important;
+    }
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+@-webkit-keyframes leftRight {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(-10px);
+    }
+    75% {
+        -webkit-transform: translateX(10px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.table__column {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table__icon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.table__icon i {
+    height: 12px;
+    color: #b9b9b9;
+    font-size: 1.6rem;
+}
+
+.active {
+    color: #fff !important;
+}
+
