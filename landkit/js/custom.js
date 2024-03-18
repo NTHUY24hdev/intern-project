@@ -1,22 +1,4 @@
-/*const showToggleMenu = () => {
-    const menu = document.getElementById("menu-toggle");
-    menu.classList.add("show");
-    const h = document.getElementById("h");
-    h.classList.add("overflow");
-  };
-  const hiddenToggleMenu = () => {
-    const menu = document.getElementById("menu-toggle");
-    menu.classList.remove("show");
-    const h = document.getElementById("h");
-    h.classList.remove("overflow");
-  };
-  const dropdown = (id) => {
-    const element = document.getElementById("list_" + id);
-    element.classList.add("show");
-    if (element.style.display == "block") element.style.display = "none";
-    else element.style.display = "block";
-  };
-
+// Validateform-------
 
   const validateform = (event) => {
     event.preventDefault();
@@ -61,7 +43,7 @@
     fPassword.innerHTML = "";
     console.log(name, email, password);
     return false;
-  };*/
+  };
 
   // javascript for menu toggle-----------------------------------------------------------
 const menu =document.getElementById("menu-toggle");
@@ -109,58 +91,6 @@ for(let i=0; i < choses.length; i++){
 }
 
 
-
-// javascript for validate form---------------------------------------------------------
-const myForm = document.getElementById("myform");
-
-function validateEmail(email){
-    let a = email.indexOf("@");
-    let dot = email.indexOf(".");
-    if(a<1 || dot < a + 2 || dot == email.length -1){
-        return true;
-    }
-    return false;
-}
-
-myForm.addEventListener("submit", function validate(event){
-    event.preventDefault();
-    const name = document.myform.name.value;
-    const email = document.myform.email.value;
-    const password = document.myform.password.value;
-
-    let textName = document.getElementById("text-name");
-    let textEmail = document.getElementById("text-email");
-    let textPass = document.getElementById("text-pass");
-
-    if(name === ""){
-        textName.innerHTML="Name must be filled out";
-        document.myform.name.focus();
-        //return false;
-    }
-    else if(email == "" || validateEmail(email) ){
-        textName.innerHTML="";
-        textEmail.innerHTML="Invalid email";
-        document.myform.email.focus();
-       // return false;
-    }
-    else if(password == "" || password.length<8){
-        textName.innerHTML="";
-        textEmail.innerHTML="";
-        textPass.innerHTML="Invalid password";
-        document.myform.password.focus();
-      //  return false;
-    }
-    else{
-        textName.innerHTML="";
-        textEmail.innerHTML="";
-        textPass.innerHTML="";
-        console.log("Entered data: ");
-        console.log("Name: "+ name);
-        console.log("Email: "+ email);
-        console.log("Password: "+ password);
-      //  return true;
-    }
-});
 
 // javascript for slideshow---------------------------------------------------------
 
